@@ -8,10 +8,10 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 import tools.BookFactory;
-import tools.BookSaver;
-import tools.HistorySaver;
+import tools.savers.BookSaver;
+import tools.savers.HistorySaver;
 import tools.ReaderFactory;
-import tools.ReaderSaver;
+import tools.savers.ReaderSaver;
 
 /**
  *
@@ -43,7 +43,7 @@ class App {
             System.out.println("4. Список читателей");
             System.out.println("5. Выдать книгу читателю");
             System.out.println("6. Вернуть книгу в библиотеку");
-            System.out.println("7. Список читаемыз книг");
+            System.out.println("7. Список читаемых книг");
             System.out.print("Выберите задачу: ");
             Scanner scanner = new Scanner(System.in);
             String task = scanner.nextLine();
